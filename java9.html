@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Simple Calculator</title>
+</head>
+<h1>Simple Calculator</h1>
+<p>Perform's all calcilations using simple functions</p>
+<p id="add"></p>
+<p id="sub"></p>
+<p id="mul"></p>
+<p id="div"></p>
+
+<script>
+
+  let num1 = 10;
+  let num2 = 2;
+
+ 
+  let add = num1 + num2;
+  let sub = num1 - num2;
+  let mul = num1 * num2;
+  let div = num1 / num2;
+
+  document.getElementById("add").innerHTML = "The added value is: " + add;
+  document.getElementById("sub").innerHTML = "The subtracted value is: " + sub;
+  document.getElementById("mul").innerHTML = "The multiplied value is: " + mul;
+  document.getElementById("div").innerHTML = "The divided value is: " + div;
+</script>
