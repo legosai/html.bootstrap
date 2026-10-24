@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple multiplication</title>
+</head>
+<body>
+    <h1>Simple Multiplication</h1>
+    <p>Enter two numbers to multiply:</p>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <button onclick="multiplyNumbers()">Multiply</button>
+    <p id="result"></p>
+    <script>
+        function multiplyNumbers() {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = num1 * num2;
+            document.getElementById("result").innerHTML = "Result: " + result;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
