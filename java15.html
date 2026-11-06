@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Education Details</title>
+</head>
+<body>
+    <h2>Education Board of Australia</h2>
+    <h2>Education Qualifications</h2>
+    <p id="one"></p>
+    <p id="two"></p>
+    <p id="three"></p>
+    <p id="four"></p>
+    <p id="five"></p>
+    <p id="six"></p>
+    <p id="seven"></p>
+    <script>
+        var candidate = {
+            name: "John McDonald",
+            qualification: "MBA",
+            university: "Ohio University",
+            year: 2020
+        }
+        document.getElementById("one").innerHTML = "Name: " + candidate.name;
+        document.getElementById("two").innerHTML = "Qualification: " + candidate.qualification;
+        document.getElementById("three").innerHTML = "University: " + candidate.university + ", Year: " + candidate.year;
+    </script>
+    <script>
+        document.write("<br/>");
+        var parts = ["Sedan", "Cabriolet", "SUV", "Coupe", "Hatchback", "Convertible", "Wagon", "Pickup"];
+        document.getElementById("four").innerHTML = "Remaining parts: " + parts;
+        document.getElementById("five").innerHTML = "Total parts: " + parts.join(" / ");
+        document.getElementById("six").innerHTML = "Index part: " + parts[3];
+        document.getElementById("seven").innerHTML = "Popping last item is removed: " + parts.pop();
+    </script>
+</body>
+</html>
